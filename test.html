@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first website</title>
+    <style>
+        .parent {
+            position: fixed;
+            
+            top:0;
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 2rem;
+            background: linear-gradient(to right, red, blue);
+            color: white;
+            box-shadow: 2px 3px 7px 2px gray;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            text-transform: uppercase;
+        }
+
+        .brand {
+            width: 5%;
+        }
+
+        .brand img {
+            width: 100%;
+        }
+
+        .link-container {
+            width: 30%;
+        }
+
+        .btn button {
+            padding: 0.6rem 1.4rem;
+            background-color: aqua;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.4s;
+            margin-right: 5rem;
+        }
+
+        .btn button:hover {
+            transform: translateY(-10px);
+        }
+
+        main {
+            
+            display: flex;
+            padding: 2rem;
+            width:70vw;
+            margin: auto;
+            margin-top:5rem;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .title-name {
+            font-size: 3rem;
+        }
+
+        .title-info {
+            font-size: 1.5rem;
+            color: gray;
+            text-align: justify;
+        }
+
+        .title-buttons button {
+            padding: 0.5rem 1.8rem;
+            border-radius: 20px;
+            border: none;
+            font-weight: 700;
+            color: white;
+        }
+
+        .btn1 {
+            background-color: red;
+        }
+
+        .btn2 {
+            background-color: blue;
+        }
+        .section2{
+            padding: 3rem;
+        }
+        .first,.second{
+            display: flex;
+            width: 50%;
+            margin: auto;
+            text-align: justify;
+            gap:2rem;
+        }
+        .second-image{
+            order: 2;
+        }
+        
+        hr{
+            width: 30%;
+            height: 2px;
+            background:linear-gradient(to left, red,blue);
+            margin:2rem auto;
+        }
+        .card-container{
+            display: flex;
+            justify-content: space-around;
+            gap:1rem;
+            padding: 3rem;
+        }
+        .card-image{
+            width: 40%;
+        }
+        .card-image img{
+            width: 100%;
+            transition: all 0.7s;
+
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem;
+            border: 2px solid transparent;
+            border-top-color:red;
+            border-right-color:blue;
+            border-left-color:orange;
+            border-bottom-color:green;
+            width: 20%;
+            box-shadow: 2px 2px 7px 2px blue;
+            transition: all 0.7s;
+        }
+        .card:hover .card-image img{
+            scale: 2;
+            transform: translateY(-30px);
+        }
+        .card:hover .card-title{
+           opacity: 1;
+        }
+        .card-title{
+            font-size:2rem;
+            opacity: 0;
+            transition: all 0.6s;
+        }
+        .btnz{
+            padding: 0.6rem 1.6rem;
+            margin:1rem 1.5rem;
+            border:none;
+            background-color: red;
+            color: white;
+            border-radius:20px ;
+        }
+        .apply{
+            width: 100%;
+        }
+        .apply button{
+            padding: 0.6rem 1.5rem;
+            width: 100%;
+            background-color: teal;
+            color: white;
+            font-weight: 700;
+            border: none;
+            border-radius: 20px;
+        }
+        .contact{
+            width: 60vw;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        input,textarea{
+            padding: 1rem;
+            margin-bottom:2rem;
+            width:100%;
+            border-radius: 20px;
+            border: 1px solid lightgray;
+        }
+        form{
+            width: 50%;
+        }
+        form button{
+            width: 100%;
+            padding: 0.6rem 1rem;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius:20px
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="brand">
+            <img src="https://code.visualstudio.com/assets/images/home-debug.svg" alt="">
+        </div>
+        <div class="link-container">
+            <ul>
+                <li>list item</li>
+                <li>list item</li>
+                <li>list item</li>
+                <li>list item</li>
+            </ul>
+        </div>
+        <div class="btn">
+            <button>Sign Up</button>
+        </div>
+    </div>
+
+    <main>
+        <div class="title-section">
+            <div class="title-name">
+                <h1>This is a title</h1>
+            </div>
+            <div class="title-info">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, officia. A dolore illo perferendis
+                    nihil nemo distinctio ipsa dolorem alias quaerat delectus, hic sapiente quis consequatur minima
+                    maxime perspiciatis. Porro odit reprehenderit dolores quam fugit quas, ducimus nesciunt error iste.7
+                </p>
+            </div>
+            <div class="title-buttons">
+                <button class="btn1">
+                    Contact me
+                </button>
+                <button class="btn2">
+                    log in
+                </button>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="./images/pic.png" alt="">
+        </div>
+    </main>
+<hr>
+    <div class="section2">
+        <div class="first">
+            <div class="first-image">
+                <img src="https://code.visualstudio.com/assets/images/home-azure.svg" alt="">
+            </div>
+            <div class="first-desc">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate architecto laudantium assumenda totam, sit temporibus ipsa fuga modi expedita vitae quas exercitationem eaque perspiciatis doloremque voluptas iusto quaerat placeat explicabo voluptatem! Optio fugit provident odit delectus iusto aliquam, dolorem animi?</h3>
+            </div>
+        </div>
+        <div class="second">
+            <div class="second-image">
+                <img src="https://code.visualstudio.com/assets/images/home-git.svg" alt="">
+            </div>
+            <div class="second-desc">
+                <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur ex maxime nobis atque porro commodi rerum tempore at consectetur natus! Sequi praesentium dolores alias veritatis quod, vel excepturi dolore eum quidem autem nulla quia repellat illum quos voluptate consequuntur magnam!</h3>
+            </div>
+        </div>
+    </div>
+
+<hr>
+
+<div class="card-container">
+    <div class="card card1">
+        <div class="card-image">
+            <img src="./images/pic.png" alt="">
+        </div>
+        <div class="card-title">
+            <h3>Lorem ipsum dolor sit amet.</h3>
+        </div>
+        <div class="card-buttons">
+            <button class="btnz">
+                Btn 1
+            </button><button class="btnz">
+                btn 2
+            </button>
+        </div>
+        <div class="apply">
+            <button>Apply</button>
+        </div>
+    </div>
+    <div class="card card1">
+        <div class="card-image">
+            <img src="./images/pic.png" alt="">
+        </div>
+        <div class="card-title">
+            <h3>Lorem ipsum dolor sit amet.</h3>
+        </div>
+        <div class="card-buttons">
+            <button class="btnz">
+                Btn 1
+            </button><button class="btnz">
+                btn 2
+            </button>
+        </div>
+        <div class="apply">
+            <button>Apply</button>
+        </div>
+    </div>
+    <div class="card card1">
+        <div class="card-image">
+            <img src="./images/pic.png" alt="">
+        </div>
+        <div class="card-title">
+            <h3>Lorem ipsum dolor sit amet.</h3>
+        </div>
+        <div class="card-buttons">
+            <button class="btnz">
+                Btn 1
+            </button><button class="btnz">
+                btn 2
+            </button>
+        </div>
+        <div class="apply">
+            <button>Apply</button>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="contact">
+    <h1>Contact us</h1>
+    <form action="">
+        <input type="text" placeholder="Name"><br>
+        <input type="text" placeholder="email"><br>
+        <textarea name="" id="" cols="30" rows="10"></textarea><br>
+        <button>Send</button>
+    </form>
+</div>
+</body>
+
+</html>
